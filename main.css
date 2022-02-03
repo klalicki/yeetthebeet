@@ -1,0 +1,60 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+
+}
+body{
+    margin:0px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 100vh;
+    overflow:hidden;
+}
+.main * {
+    display: block;
+    text-align: center;
+}
+h1{
+    position: relative;
+    z-index: 1000;
+}
+@keyframes spin {
+	0% {
+		transform: rotateZ(0);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+.yeet{
+    height: 34vh;
+    width: 40vh;
+    transition: 10s all ease;
+}
+.yeetoff{
+    transform:translateY(500vh);
+}
+
+.yeetslide{
+    
+    animation: spin 10s linear infinite; 
+
+
+}
+.yeetspinfast{
+    animation: spin 2s linear infinite; 
+}
+.yeetbox{
+    transition: all 0.2s;
+}
+.yeetbox:hover{
+   transition:all 0.2s;
+   transform: scale(1.2) ;
+}
+.offscreen{
+    transform: translateY(1000px);
+}
